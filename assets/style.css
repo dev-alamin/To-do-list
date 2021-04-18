@@ -1,0 +1,125 @@
+body{
+    background-color: #ddd;
+}
+section.grocery {
+    width: 500px;
+    background: #fff;
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+article.grocery-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 10px 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+article.grocery-item .btn-container button {
+    border: none;
+    background: blueviolet;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+    min-width: 50px;
+    margin: 2px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+article.grocery-item .btn-container button.delete-btn {
+    background: red;
+}
+
+button.clear-btn {
+    text-align: center;
+    display: block;
+    margin: auto;
+    border: none;
+    color: red;
+    padding: 5px 15px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+article.grocery-item .btn-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-control {
+    margin-bottom: 25px;
+}
+
+.form-control input, .form-control button {
+    border: none;
+    background: #ddd;
+    padding: 12px;
+}
+
+.form-control input {
+    width: 78%;
+}
+
+.form-control button {
+    background: blueviolet;
+    color: #fff;
+    margin-left: -4px;
+    width: 17%;
+}
+
+article.grocery-item .btn-container button:focus, .form-control input:focus {
+    outline: none;
+}
+
+/**
+ * Alert message
+ */
+p.alert{
+    padding: 5px 15px;
+    min-height: 29px;
+    opacity: 0;
+
+}
+ p.alert.alert-danger {
+    background: #F2C9D6;
+    color: #fff;
+    opacity: 1;
+}
+p.alert-success {
+    background: #D6F5D8;
+    opacity: 1;
+}
+
+.grocery-container{
+    visibility: hidden;
+}
+.grocery-container.show-container{
+    visibility: visible;
+}
+/**
+ * Responsiveness
+ * 
+ * /
+ */
+
+
+@media (max-width: 575.98px){
+    section.grocery {
+        width: 95%;
+        padding: 5px;
+    }
+    .form-control button{
+        width: 20%;
+    }
+    .form-control input{
+        width: 70%;
+    }
+ }
