@@ -130,7 +130,7 @@ function editItem(e) {
     //set form value 
     grocery.value = editElement.innerHTML;
     editFlag = true;
-    eidtBtn = element.dataset.id;
+    eidtID = element.dataset.id;
     submitBtn.textContent = "Edit";
 }
 
